@@ -1,0 +1,29 @@
+CREATE DATABASE  IF NOT EXISTS `to_do_list`;
+USE `to_do_list`;
+
+--
+-- Table structure for table `employee`
+--
+
+DROP TABLE IF EXISTS `tasks`;
+
+CREATE TABLE `tasks` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `task_name` varchar(45) DEFAULT NULL,
+  `task_description` varchar(45) DEFAULT NULL,
+  `status` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
+
+--
+-- Data for table `employee`
+--
+
+INSERT INTO `tasks` VALUES 
+	(1,'Mycie penisa','w zlewie','Done');
+INSERT INTO `tasks` VALUES 	(2,'Love','Kochac Misie','To Do');
+INSERT INTO `tasks` VALUES 	(3,'Nauka','Nauczyc sie grac na tamburynie','Done');
+
+
+select * from tasks
+
